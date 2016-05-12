@@ -9,8 +9,49 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tagweck.tagweck.MainActivity">
 
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:format24Hour="H:mm:ss"
+        android:format12Hour="h:mm:ss a"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Sekunden: "
+        android:id="@+id/seconds"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/textClock"
+        android:layout_toEndOf="@+id/refresh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minuten: "
+        android:id="@+id/minutes"
+        android:layout_above="@+id/refresh"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stunden: "
+        android:id="@+id/hours"
+        android:layout_above="@+id/refresh"
+        android:layout_toStartOf="@+id/refresh"
+        android:layout_marginEnd="19dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktualisieren"
+        android:id="@+id/refresh"
+        android:layout_below="@+id/seconds"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="refresh"/>
+
 </RelativeLayout>
