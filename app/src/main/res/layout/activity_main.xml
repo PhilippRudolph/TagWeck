@@ -22,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sekunden: "
-        android:id="@+id/seconds"
-        android:layout_marginTop="54dp"
+        android:id="@+id/seconds_text"
+        android:layout_marginTop="38dp"
         android:layout_below="@+id/textClock"
         android:layout_toEndOf="@+id/refresh" />
 
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Minuten: "
-        android:id="@+id/minutes"
+        android:id="@+id/minutes_text"
         android:layout_above="@+id/refresh"
         android:layout_centerHorizontal="true" />
 
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stunden: "
-        android:id="@+id/hours"
+        android:id="@+id/hours_text"
         android:layout_above="@+id/refresh"
         android:layout_toStartOf="@+id/refresh"
         android:layout_marginEnd="19dp" />
@@ -49,9 +49,9 @@
         android:layout_height="wrap_content"
         android:text="Aktualisieren"
         android:id="@+id/refresh"
-        android:layout_below="@+id/seconds"
+        android:onClick="refresh"
+        android:layout_below="@+id/seconds_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:onClick="refresh"/>
+        android:layout_marginTop="43dp" />
 
 </RelativeLayout>
